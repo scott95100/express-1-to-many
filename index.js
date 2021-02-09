@@ -20,6 +20,7 @@ app.get('/', (req, res) => {
 });
 ////USE request/////
 app.use('/users', controllers.users)
+app.use('/pets', controllers.pets)
 // TODO set up controllers
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
